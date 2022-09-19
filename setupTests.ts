@@ -1,7 +1,13 @@
 import '@testing-library/jest-dom';
 
-import '~/i18n/i18n';
+import { server } from '~/mocks/server';
 
+// Setup MSW mocking.
+beforeAll(() => server.listen({ onUnhandledRequest: 'error' }));
+afterAll(() => server.close());
+afterEach(() => server.resetHandlers());
+
+// Define matchMedia property on global window object.
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
   value: vi.fn().mockImplementation(query => ({
