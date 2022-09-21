@@ -1,10 +1,11 @@
 module.exports = {
   extends: [
     '@astrosat/eslint-config-astrosat',
+    'plugin:jsx-a11y/recommended',
     'plugin:jest-dom/recommended',
     'plugin:testing-library/react',
     'plugin:tailwindcss/recommended',
     'plugin:storybook/recommended',
   ],
-  plugins: ['jest-dom', 'testing-library', 'tailwindcss'],
+  plugins: ['jsx-a11y', 'jest-dom', 'testing-library', 'tailwindcss'],
 };

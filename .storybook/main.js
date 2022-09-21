@@ -14,6 +14,7 @@ module.exports = {
         },
       },
     },
+    '@storybook/addon-a11y',
     // 'storybook-react-i18next',
   ],
   framework: '@storybook/react',
