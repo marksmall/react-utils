@@ -18,4 +18,4 @@ jobs:
           yarn test
         env:
           CI: true
-          GITHUB_REGISTRY_TOKEN: ${{secrets.GITHUB_REGISTRY_TOKEN}}
+          GITHUB_REGISTRY_TOKEN: ${{secrets.ASTROSAT_GITHUB_REGISTRY_TOKEN}}
