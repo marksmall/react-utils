@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, MouseEvent } from 'react';
+import React, { FC, MouseEvent, ReactElement } from 'react';
 
 interface Props {
   className?: string;
@@ -6,16 +6,9 @@ interface Props {
   children: ReactElement;
 }
 
-export const Button: FC<Props> = ({
-  onClick,
-  className,
-  children,
-}): ReactElement => {
+export const Button: FC<Props> = ({ onClick, className, children }): ReactElement => {
   return (
-    <button
-      onClick={onClick}
-      className={`btn bg-blue-500 ${className ? className : ''}`}
-    >
+    <button className={`astrosat-btn astrosat-bg-green-500 ${className ? className : ''}`} onClick={onClick}>
       {children}
     </button>
   );
