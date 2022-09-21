@@ -2,6 +2,7 @@
 
 import * as path from 'path';
 
+import typescript from '@rollup/plugin-typescript';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
@@ -26,6 +27,16 @@ export default defineConfig({
           'react-dom': 'ReactDOM',
         },
       },
+      plugins: [
+        typescript({
+          target: 'es2020',
+          rootDir: path.resolve(__dirname, 'src'),
+          declaration: true,
+          declarationDir: path.resolve(__dirname, 'dist'),
+          exclude: path.resolve(__dirname, 'node_modules/**'),
+          allowSyntheticDefaultImports: true,
+        }),
+      ],
     },
     sourcemap: true,
   },
