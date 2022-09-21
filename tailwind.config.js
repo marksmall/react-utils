@@ -25,4 +25,8 @@ module.exports = {
   },
   // eslint-disable-next-line no-undef
   plugins: [require('daisyui'), require('tailwindcss-debug-screens')],
+  // corePlugins: {
+  //   preflight: false,
+  // },
+  // prefix: 'astrosat-',
 };

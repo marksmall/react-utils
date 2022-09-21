@@ -29,8 +29,10 @@
     ".": {
       "import": "./dist/react-utils.es.js",
       "require": "./dist/react-utils.umd.js"
-    }
+    },
+    "./dist/style.css": "./dist/style.css"
   },
+  "sideEffects": false,
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",

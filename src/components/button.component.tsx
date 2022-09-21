@@ -8,7 +8,8 @@ interface Props {
 
 export const Button: FC<Props> = ({ onClick, className, children }): ReactElement => {
   return (
-    <button className={`astrosat-btn astrosat-bg-green-500 ${className ? className : ''}`} onClick={onClick}>
+    // <button className={`astrosat-btn astrosat-bg-green-500 ${className ? className : ''}`} onClick={onClick}>
+    <button className={`btn bg-green-500 ${className ? className : ''}`} onClick={onClick}>
       {children}
     </button>
   );
