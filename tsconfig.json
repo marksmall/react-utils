@@ -19,7 +19,16 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"]
-    }
+    },
+    "outDir": "dist",
+    "declaration": true
   },
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "./src/{stories,mocks}/**/*.ts",
+    "./src/{stories,mocks}/**/*.tsx",
+    "./cypress/*"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
