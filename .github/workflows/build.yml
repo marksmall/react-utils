@@ -15,7 +15,7 @@ jobs:
       - name: yarn install, and test
         run: |
           yarn install
-          yarn test
+          yarn test:ci
         env:
           CI: true
           GITHUB_REGISTRY_TOKEN: ${{secrets.ASTROSAT_GITHUB_REGISTRY_TOKEN}}

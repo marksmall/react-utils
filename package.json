@@ -35,6 +35,7 @@
   "scripts": {
     "dev": "vite",
     "test": "vitest watch",
+    "test:ci": "vitest run",
     "test:coverage": "vitest run --coverage",
     "build": "rm -rf dist && tsc && vite build",
     "preview": "vite preview",
